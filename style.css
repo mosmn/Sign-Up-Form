@@ -124,7 +124,7 @@ input[type="password"] {
     padding: 24px 10px 12px;
     font-size: 16px;
     font-size: 1rem;
-    width: 100%;
+    width: 250px;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -221,4 +221,70 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     100% {
         opacity: 1;
     }
+}
+
+.form-input label {
+    padding: 5px 0;
+    font-size: 14px;
+    font-size: 0.75rem;
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 26px;
+    color: #8BC34A;
+    -webkit-animation: silo-fade 0.2s;
+    -moz-animation: silo-fade 0.2s;
+    animation: silo-fade 0.2s;
+    max-width: 80%;
+}
+
+.form-input input:focus + label,
+.form-input input[required]:valid + label,
+.form-input input:not(:placeholder-shown) + label,
+.form-input textarea:focus + label,
+.form-input textarea:valid + label,
+.form-input textarea:not(:placeholder-shown) + label {
+    display: block;
+}
+
+.form-input input:invalid {
+    border: 1px solid #b92326;
+    background-color: rgba(185, 35, 38, 0.25);
+}
+
+.form-input input:focus:invalid {
+    background-color: transparent;
+    border: 1px solid #b92326;
+}
+
+.form-input input:invalid + label {
+    color: #b92326;
+}
+
+.form-input input:focus:invalid + label::after {
+    content: " (" attr(data-help) ")";
+    animation: silo-help 100s;
+}
+
+.form-input input:invalid + label::after {
+    content: " (" attr(data-help) ")";
+}
+
+.form-input input:required:valid {
+    border: 1px solid #8BC34A;
+    background-color: rgba(139, 195, 74, 0.25);
+}
+
+.form-input input:focus:required:valid {
+    border: 1px solid #8BC34A;
+    background-color: transparent;
+}
+
+.form-input input:required:valid + label {
+    color: #8BC34A;
+}
+
+.form-input input:placeholder-shown {
+    background-color: transparent;
+    border: 1px solid #d8d8d8;
 }
