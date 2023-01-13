@@ -23,9 +23,9 @@
                 Sign up now to get started.
             </p>
             <p> You know you want to</p>
-            <div class="form">
-                <h1> Let's do this!</h1>
-                <form class="form-input">
+            <form class="form-content">
+                <div class="form">
+                    <h1> Let's do this!</h1>
                     <div class="form-firstname">
                         <input id="firstname" placeholder="First Name *" name="firstname" type="text" value="" pattern="^[^0-9]+$" size="30" maxlength="200" required>
                         <label for="firstname" data-help="just write your first name ffs">First Name</label>
@@ -50,10 +50,13 @@
                         <input id="confirm-password" placeholder="Confirm Password *" name="confirm-password" type="password" value="" maxlength="200" required>
                         <label for="confirm-password" data-help="type in your password bruh">Confirm Password</label>
                     </div>
-                    <div class="form-submit">
-                        <input type="submit" value="Sign Up">
-                    </div>
-                </form>
+                </div>
+                <div class="form-submit">
+                    <input type="submit" value="Create Account">
+                </div>
+            </form>
+            <div class="form-footer">
+                <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
     </div>
