@@ -47,3 +47,15 @@ img[alt="motorbike"] {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.form {
+    background: linear-gradient(to right, black, #858585);
+    background-size: cover;
+    background-position: center;
+    width: 60%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
