@@ -94,8 +94,15 @@ img[alt="motorbike"] {
 
 .form-container {
     width: 100%;
+    height: 75%;
     max-width: 760px;
-    margin: 50px auto;
+    margin: 35px auto;
+    padding: 0 20px;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    background-color: black;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 5px 5px #595B58;
 }
 
 .form-input {
@@ -125,7 +132,7 @@ input[type="password"] {
     padding: 24px 10px 12px;
     font-size: 16px;
     font-size: 1rem;
-    width: 330px;
+    width: 310px;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -224,14 +231,18 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
 }
 
+.form-input > * {
+    position: relative;
+}
+
 .form-input label {
     padding: 5px 0;
     font-size: 14px;
     font-size: 0.75rem;
     display: none;
     position: absolute;
-    top: 15px;
-    left: 26px;
+    top: 3px;
+    left: 7px;
     color: #8BC34A;
     -webkit-animation: silo-fade 0.2s;
     -moz-animation: silo-fade 0.2s;
@@ -241,10 +252,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 .form-input input:focus + label,
 .form-input input[required]:valid + label,
-.form-input input:not(:placeholder-shown) + label,
-.form-input textarea:focus + label,
-.form-input textarea:valid + label,
-.form-input textarea:not(:placeholder-shown) + label {
+.form-input input:not(:placeholder-shown) + label {
     display: block;
 }
 
@@ -332,8 +340,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 input[type="submit"] {
     background-color: transparent;
-    border: 1px solid #8BC34A;
-    color: #8BC34A;
+    border: 1px solid #666;
+    color: #666;
     padding: 5px 15px;
     font-size: 16px;
     font-size: 1rem;
@@ -343,6 +351,6 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: rgba(139, 195, 74, 0.25);
-    border: 1px solid #8BC34A;
+    background-color: rgb(211, 211, 211);
+    border: 1px solid #666;
 }
