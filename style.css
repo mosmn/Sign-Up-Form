@@ -288,3 +288,61 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     background-color: transparent;
     border: 1px solid #d8d8d8;
 }
+
+.form-input input::placeholder {
+    color: #d8d8d8;
+}
+
+.form-input input::-webkit-input-placeholder {
+    color: #d8d8d8;
+}
+
+.form-input input::-moz-placeholder {
+    color: #d8d8d8;
+}
+
+.form-input input:-ms-input-placeholder {
+    color: #d8d8d8;
+}
+
+.form-input input:-moz-placeholder {
+    color: #d8d8d8;
+}
+
+.form-input input:focus::placeholder {
+    color: transparent;
+}
+
+.form-input input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.form-input input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+.form-input input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.form-input input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input[type="submit"] {
+    background-color: transparent;
+    border: 1px solid #8BC34A;
+    color: #8BC34A;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-size: 1rem;
+    margin: 15px auto;
+    vertical-align: middle;
+    display: block;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(139, 195, 74, 0.25);
+    border: 1px solid #8BC34A;
+}
