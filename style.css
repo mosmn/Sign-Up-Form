@@ -9,7 +9,7 @@
 }
 
 .image {
-    background-image: url(imgs/kh2.jpg);
+    background: url(imgs/kh2.jpg);
     background-size: cover;
     background-position: center;
     width: 40%;
@@ -44,7 +44,7 @@ img[alt="motorbike"] {
 .logo > h1 {
     font-family: my-cool-font, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 6rem;
-    background: -webkit-linear-gradient(#FECA57, #EE5253);
+    background: linear-gradient(to bottom right, #FECA57 50%, #EE5253 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
