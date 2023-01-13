@@ -1,6 +1,7 @@
 .section {
     display: flex;
     flex-direction: row;
+    gap: 70px;
     margin: -8px;
     padding: 0;
     width: 100%;
@@ -49,13 +50,14 @@ img[alt="motorbike"] {
 }
 
 .form {
-    background: linear-gradient(to right, black, #858585);
+    background: #fff;
     background-size: cover;
     background-position: center;
     width: 60%;
     height: 100%;
     margin: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
