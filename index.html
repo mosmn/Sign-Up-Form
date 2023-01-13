@@ -27,8 +27,31 @@
                 <h1> Let's do this!</h1>
                 <form class="form-input">
                     <div class="form-firstname">
-                        <input id="firstname" placeholder="Name *" name="firstname" type="text" value="" pattern="^[^0-9]+$" size="30" maxlength="200" required>
+                        <input id="firstname" placeholder="First Name *" name="firstname" type="text" value="" pattern="^[^0-9]+$" size="30" maxlength="200" required>
                         <label for="firstname" data-help="just write your first name ffs">First Name</label>
+                    </div>
+                    <div class="form-lastname">
+                        <input id="lastname" placeholder="Last Name *" name="lastname" type="text" value="" pattern="^[^0-9]+$" size="30" maxlength="200" required>
+                        <label for="lastname" data-help="just write your last name ffs">Last Name</label>
+                    </div>
+                    <div class="form-email">
+                        <input id="email" placeholder="Email *" name="email" type="email" value="" maxlength="200" required>
+                        <label for="email" data-help="type in your email bruh, format email@email.com">Email</label>
+                    </div>
+                    <div class="form-phonenumber">
+                        <input id="phonenumber" placeholder="Phone Number *" name="phonenumber" type="text" value="" maxlength="200" required>
+                        <label for="email" data-help="format 1123456789">Phone Number</label>
+                    </div>
+                    <div class="form-password">
+                        <input id="password" placeholder="Password *" name="password" type="password" value="" maxlength="200" required>
+                        <label for="password" data-help="type in your password bruh">Password</label>
+                    </div>
+                    <div class="form-confirm-password">
+                        <input id="confirm-password" placeholder="Confirm Password *" name="confirm-password" type="password" value="" maxlength="200" required>
+                        <label for="confirm-password" data-help="type in your password bruh">Confirm Password</label>
+                    </div>
+                    <div class="form-submit">
+                        <input type="submit" value="Sign Up">
                     </div>
                 </form>
             </div>
