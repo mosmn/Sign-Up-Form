@@ -1,0 +1,49 @@
+.section {
+    display: flex;
+    flex-direction: row;
+    margin: -8px;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.image {
+    background-image: url(imgs/kh2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 400px;
+}
+
+img[alt="motorbike"] {
+    width: 80px;
+    height: 80px;
+    transform: rotate(320deg);
+}
+
+@font-face {
+    font-family: my-cool-font;
+    src: url(font/HARD\ STREET.woff);
+}
+
+.logo > h1 {
+    font-family: my-cool-font, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 6rem;
+    background: -webkit-linear-gradient(#FECA57, #EE5253);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
