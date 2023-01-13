@@ -1,7 +1,35 @@
+/* General Styles */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, button, input, select, textarea {
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    color: #666;
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    max-width: 100%;
+    vertical-align: baseline;
+}
+
+textarea, input {
+    outline: none;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+/* Left side */
 .section {
     display: flex;
     flex-direction: row;
-    gap: 70px;
     margin: -8px;
     padding: 0;
     width: 100%;
@@ -26,7 +54,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 200px;
     margin-bottom: 400px;
 }
 
@@ -49,13 +77,14 @@ img[alt="motorbike"] {
     -webkit-text-fill-color: transparent;
 }
 
-.form {
+/* Right side */
+.content {
     background: #fff;
     background-size: cover;
     background-position: center;
     width: 60%;
     height: 100%;
-    margin: 0;
+    margin: 0 0 0 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
