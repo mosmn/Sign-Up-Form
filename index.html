@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
     <title>Sign-Up Form</title>
 </head>
 <body>
@@ -40,12 +40,13 @@
                             <label for="email" data-help="type in your email bruh, format email@email.com">Email</label>
                         </div>
                         <div class="form-phone">
-                            <input id="phonenumber" placeholder="Phone Number" name="phonenumber" type="text" value="" size="30" maxlength="200">
+                            <input id="phonenumber" placeholder="Phone Number" name="phonenumber" type="text" value="" pattern="^[0-9]{10}$" size="30" maxlength="200">
                             <label for="email" data-help="format 1123456789">Phone Number</label>
                         </div>
                         <div class="form-password">
                             <input id="password" placeholder="Password *" name="password" type="password" value="" size="30" maxlength="200" required>
                             <label for="password" data-help="type in your password bruh">Password</label>
+                            <span id='error-message'></span>
                         </div>
                         <div class="form-confirm-password">
                             <input id="confirm-password" placeholder="Confirm Password *" name="confirm-password" type="password" value="" size="30" maxlength="200" required>
