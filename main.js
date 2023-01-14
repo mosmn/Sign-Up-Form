@@ -1,15 +1,3 @@
-/*
-select element id password
-select element id confirm_password
-
-if password length doesnot = 0
-compare the value of the value attribute of the two elements
-if they are the same, its valid and :valid will be styles will be applied
-if they are not the same, its invalid and :invalid will be styles will be applied
-
-to create new element
-*/ 
-
 const password = document.getElementById('password');
 const confirm_password = document.getElementById('confirm-password');
 const errorMessages = document.getElementById('error-message');
